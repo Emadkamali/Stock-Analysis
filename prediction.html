@@ -6,6 +6,8 @@
         <title>Stock Analysis Website</title>
         <!-- linking CSS sheet -->
         <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
     </head>
     <body>
         <section class="header">
@@ -23,7 +25,15 @@
 
             </nav>
             <div class="prediction">
-               
+                <div>
+                    <label for="selTicker"> Select stock that you would like to view :</label>
+                    <select id="selTicker" onchange="optionChanged(this.value)">
+                    </select>
+                    <br><br>
+                </div>
+                <br><br>
+                <div id="stockPlots"></div>
+                <script src="script.js"></script>
             </div>
         </section> 
 

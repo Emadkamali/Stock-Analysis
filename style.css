@@ -3,6 +3,10 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+body{
+    color:#f4f4f4;
+    margin:auto
+}
 
 /* header */
 .header {
@@ -151,3 +155,48 @@ nav img {
     margin: 0;
     font-weight: 200;
 }
+
+.stocks{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+.analysis img {
+    width: 90%; 
+    display: block; 
+    margin: 0 auto; 
+    margin-bottom: 30px;
+    border: 5px solid rgb(33, 32, 32); 
+}
+
+.prediction{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+#stockPlot{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    margin: auto; 
+    height: 10%; 
+    border: 5px solid rgb(33, 32, 32); 
+    box-sizing: auto;
+}
+
+#stockPlots{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: auto; 
+    height: 10%; 
+    border: 5px solid rgb(33, 32, 32); 
+    box-sizing: auto;
+}
+
+
+

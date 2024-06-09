@@ -6,6 +6,8 @@
         <title>Stock Analysis Website</title>
         <!-- linking CSS sheet -->
         <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
     </head>
     <body>
         <section class="header">
@@ -23,10 +25,16 @@
 
             </nav>
             <div class="stocks">
-               
+                <div>
+                    <label for="selTicker">Select stock that you would like to view :</label>
+                    <select id="selTicker" onchange="optionChanged(this.value)">
+                    </select>
+                    <br><br>
+                </div>
+                <div id="stockPlot"></div>
+                <script src="app.js"></script>
             </div>
-        </section> 
-
+            </section>
     </body>
     <footer class="copyright">
         <p>&copy; 2024 Jasleen Shergill. All rights reserved.</p>
