@@ -7,7 +7,7 @@ function optionChanged(selectedValue) {
 
 // Function to fetch stock prediction data for all tickers or a specific ticker
 function fetchStockPredictionData(selectedTicker = null) {
-    d3.json("all_stocks_prediction_and_test_data.json").then(function(predictions) {
+    d3.json("../Output/all_stocks_prediction_and_test_data.json").then(function(predictions) {
         console.log("Stock prediction data:", predictions); // Check if data is correctly fetched
 
         // Populate the dropdown menu

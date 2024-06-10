@@ -5,14 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Stock Analysis Website</title>
         <!-- linking CSS sheet -->
-        <link rel="stylesheet" href="style.css">
-        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <link rel="stylesheet" href="../CSS/style.css">
     </head>
     <body>
         <section class="header">
             <nav>
-                <a href="index.html"><img src="Images/logo.jpg" alt="Logo"></a>
+                <a href="index.html"><img src="../Images/logo.jpg" alt="Logo"></a>
                 <div class="nav-links">
                     <ul id="list">
                         <li><a href="index.html">HOME</a></li>
@@ -24,17 +22,17 @@
                 </div>
 
             </nav>
-            <div class="stocks">
-                <div>
-                    <label for="selTicker">Select stock that you would like to view :</label>
-                    <select id="selTicker" onchange="optionChanged(this.value)">
-                    </select>
-                    <br><br>
-                </div>
-                <div id="stockPlot"></div>
-                <script src="app.js"></script>
+            <div class="text-box">
+                <h1>Stock Analysis</h1>
+                <h1> University of Toronto </h1>
+                <p>
+                    Group Contributors - Jasleen Shergill | Sneha Kumari | Emad Kamli | Vanilla Tse <br>
+                    <!-- we can change this  -->
+                   
+                </p>
+                <a href="https://github.com/Emadkamali/Stock-Analysis" alt="Github repo link" class="button-repo">Visit our Github repo</a>
             </div>
-            </section>
+        </section>    
     </body>
     <footer class="copyright">
         <p>&copy; 2024 Jasleen Shergill. All rights reserved.</p>

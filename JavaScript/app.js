@@ -1,5 +1,5 @@
 // Load the JSON data containing stock predictions
-d3.json("predictions.json").then(function(data) {
+d3.json("../Output/predictions.json").then(function(data) {
     // Extract the tickers from the data
     var tickers = Object.keys(data);
     

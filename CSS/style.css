@@ -12,7 +12,7 @@ body{
 .header {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('Images/picture.png');
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('../Images/picture.png');
     background-position: center;
     background-size: cover;
     position: relative;
@@ -123,6 +123,7 @@ nav img {
     margin:auto;
     text-align: center;
     padding-top: 100px ;
+    color: black;
 }
 
 .team-names {
