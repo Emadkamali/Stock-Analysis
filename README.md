@@ -1,5 +1,6 @@
 # Stock-Analysis and Prediction
 **Comprehensive Project Analysis and Comparison of Models**
+
 **Introduction:**
 The project aims to forecast stock prices using machine learning models and technical indicators. Three main models were explored: Prophet with Technical Indicators, Prophet without Technical Indicators, and Gradient Boosting Regression. These models were analyzed and compared to determine the most suitable approach for stock price prediction.
 
