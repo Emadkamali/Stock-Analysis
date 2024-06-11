@@ -65,6 +65,7 @@ Requires clean historical price data with no missing values.
 Suitable for accurate short-term price prediction with minimal preprocessing.
 
 **Performance Metrics for Evaluation:**
+
 **Mean Squared Error (MSE):** Measures average squared difference between actual and predicted values.
 **Root Mean Squared Error (RMSE):** Provides interpretable metric by taking square root of MSE.
 **Mean Absolute Error (MAE):** Represents average absolute difference between actual and predicted values.
@@ -76,6 +77,7 @@ Suitable for accurate short-term price prediction with minimal preprocessing.
 **Gradient Boosting Model:** Clear and focused visualization of historical, test, and predicted prices, effective for accurate short-term forecasts.
 
 **Features Added:**
+
 **1.Hosting Gradient Boosting Model with Flask:**
 
 Integrates Gradient Boosting Model with Flask application, facilitating hosting on a local server.
