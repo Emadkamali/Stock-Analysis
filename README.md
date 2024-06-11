@@ -109,11 +109,15 @@ The Gradient Boosting Regression Model emerges as the optimal choice for stock p
 
 **Fine-tuning Models:**
 Further hyperparameter tuning and optimization of models for improved accuracy.
+
 **Enhanced Web Interface:**
 Adding interactive features and responsive design to the web interface for better user experience.
+
 **Incorporating Additional Data:**
 Integration of external datasets (e.g., economic indicators, news sentiment) for more robust analysis.
+
 **Ensemble Methods:**
 Exploration of ensemble methods combining multiple models for enhanced predictive power.
+
 **Deployment on Cloud:**
 Deployment of models and web interface on cloud platforms for scalability and accessibility.
