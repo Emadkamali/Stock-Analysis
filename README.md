@@ -28,11 +28,14 @@ Tableau (for storyboarding).
 **Strengths:**
 Incorporates multiple technical indicators (SMA, EMA, RSI, MACD) for comprehensive market analysis.
 Effectively captures seasonality and trends, providing valuable insights for long-term investment strategies.
+
 **Weaknesses:**
 Computationally intensive due to the complexity of technical indicators.
 Requires meticulous data preparation and cleaning.
+
 **Performance:**
 Higher MSE than the Gradient Boosting Model indicates less accuracy for short-term forecasting.
+
 **Conditions for Use:**
 Requires sufficient historical stock price data and accurate technical indicators.
 Ideal for long-term investors focusing on market trends and patterns.
@@ -42,10 +45,13 @@ Ideal for long-term investors focusing on market trends and patterns.
 **Strengths:**
 Simpler and faster to implement, focusing solely on historical price data.
 Effective in capturing general trends and seasonal patterns over a longer period.
+
 **Weaknesses:**
 Lack of detailed technical indicators may limit accuracy for short-term forecasts.
+
 **Performance:**
 Higher MSE compared to the Gradient Boosting Model, less suitable for accurate short-term prediction.
+
 **Conditions for Use:**
 Requires clean and preprocessed historical price data.
 Suitable for quick trend analysis without the complexity of technical indicators.
@@ -55,11 +61,14 @@ Suitable for quick trend analysis without the complexity of technical indicators
 **Strengths:**
 Focuses on predicting next day's closing price using current day's closing price, providing a straightforward approach.
 Utilizes ensemble techniques for high accuracy and robustness.
+
 **Weaknesses:**
 Simple feature set may limit its ability to capture complex market dynamics.
 Hyperparameter tuning may be required for optimal performance.
+
 **Performance:**
 Lowest MSE among the models, indicating the highest accuracy for short-term forecasting.
+
 **Conditions for Use:**
 Requires clean historical price data with no missing values.
 Suitable for accurate short-term price prediction with minimal preprocessing.
