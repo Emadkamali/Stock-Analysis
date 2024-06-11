@@ -25,7 +25,7 @@ Tableau (for storyboarding).
 **Prophet Model 1 (With Technical Indicators):**
 
 **Strengths:**
-Incorporates multiple technical indicators (SMA, EMA, RSI, MACD, Bollinger Bands) for comprehensive market analysis.
+Incorporates multiple technical indicators (SMA, EMA, RSI, MACD) for comprehensive market analysis.
 Effectively captures seasonality and trends, providing valuable insights for long-term investment strategies.
 **Weaknesses:**
 Computationally intensive due to the complexity of technical indicators.
