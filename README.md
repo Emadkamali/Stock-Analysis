@@ -6,19 +6,19 @@ The project aims to forecast stock prices using machine learning models and tech
 **Libraries Used:**
 The project utilized various Python libraries, including:
 
-yfinance
-requests
-vaderSentiment
-pandas
-pandas_ta
-Prophet
-scikit-learn
-numpy
-matplotlib
-plotly
-Flask (for hosting the Gradient Boosting Regression model)
-HTML, CSS (for creating a web interface)
-Tableau (for storyboarding)
+yfinance, 
+requests, 
+vaderSentiment, 
+pandas, 
+pandas_ta, 
+Prophet, 
+scikit-learn, 
+numpy, 
+matplotlib, 
+plotly, 
+Flask (for hosting the Gradient Boosting Regression model), 
+HTML, CSS (for creating a web interface), 
+Tableau (for storyboarding).
 
 **Model Conditions and Use Cases:**
 
