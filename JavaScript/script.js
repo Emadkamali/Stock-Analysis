@@ -1,18 +1,18 @@
 // Function to handle dropdown menu change
 function optionChanged(selectedValue) {
-    var ticker = selectedValue; // Get the selected ticker symbol
+    var ticker = selectedValue; 
     console.log("Selected ticker:", ticker);
-    fetchStockPredictionData(ticker); // Fetch data for the selected ticker
+    fetchStockPredictionData(ticker); 
 }
 
-// Function to fetch stock prediction data for all tickers or a specific ticker
+// Function to fetch stock 
 function fetchStockPredictionData(selectedTicker = null) {
     d3.json("../Output/all_stocks_prediction_and_test_data.json").then(function(predictions) {
-        console.log("Stock prediction data:", predictions); // Check if data is correctly fetched
+        console.log("Stock prediction data:", predictions); 
 
-        // Populate the dropdown menu
+       
         var dropdown = document.getElementById("selTicker");
-        dropdown.innerHTML = ''; // Clear previous options
+        dropdown.innerHTML = ''; 
         Object.keys(predictions).forEach(function(ticker) {
             var option = document.createElement("option");
             option.text = ticker;
@@ -20,32 +20,32 @@ function fetchStockPredictionData(selectedTicker = null) {
             dropdown.add(option);
         });
 
-        // Set the dropdown to the selected ticker if provided
+        // Set the dropdown to the selected ticker 
         if (selectedTicker) {
             dropdown.value = selectedTicker;
         } else {
-            // Set the dropdown to the first ticker if none is selected
+           
             selectedTicker = dropdown.value;
         }
 
-        // Update the plot for the selected ticker
+        // Update the plot 
         updateStockPlot(selectedTicker, predictions[selectedTicker]);
     }).catch(function(error) {
         console.error("Error loading stock prediction data:", error);
     });
 }
 
-// Function to update stock plot based on ticker data
+// Function to update stock plot 
 function updateStockPlot(ticker, data) {
     console.log("Updating stock plot for ticker:", ticker);
 
-    // Get stock prediction data for the selected ticker
+    // Get stock prediction data 
     var testDates = data.test.dates;
     var testPrices = data.test.prices;
     var forecastDates = data.forecast.dates;
     var forecastPrices = data.forecast.prices;
 
-    // Create traces for the stock plot
+    // Create traces
     var trace1 = {
         x: testDates,
         y: testPrices,
@@ -62,7 +62,7 @@ function updateStockPlot(ticker, data) {
 
     var plotData = [trace1, trace2];
 
-    // Layout for the stock plot
+    // Layout
     var layout = {
         title: `Stock Prediction for ${ticker}`,
         xaxis: {
@@ -84,7 +84,7 @@ function updateStockPlot(ticker, data) {
     // Clear any previous plots
     document.getElementById('stockPlots').innerHTML = '';
 
-    // Create a new div container for the plot
+   
     var plotContainer = document.createElement('div');
     plotContainer.id = `stockPlot_${ticker}`;
     plotContainer.style.marginBottom = '20px';
@@ -98,5 +98,5 @@ function updateStockPlot(ticker, data) {
     });
 }
 
-// Initialize the application
+
 fetchStockPredictionData();
