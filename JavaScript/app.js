@@ -1,10 +1,10 @@
 // Load the JSON data containing stock predictions
 d3.json("../Output/predictions.json").then(function(data) {
-    console.log("Data loaded successfully:", data); // Log data to check if it's loaded correctly
+    console.log("Data loaded successfully:", data); 
     
     // Extract the tickers from the data
     var tickers = Object.keys(data);
-    console.log("Tickers extracted:", tickers); // Log tickers to verify
+    console.log("Tickers extracted:", tickers); 
     
     // Create dropdown options
     var dropdown = d3.select("#selTicker");
@@ -14,15 +14,14 @@ d3.json("../Output/predictions.json").then(function(data) {
         .attr("value", function(d) { return d; })
         .text(function(d) { return d; });
 
-    // Initial plot based on the first ticker
+    // plot based on the first ticker
     var initialTicker = tickers[0];
-    console.log("Initial ticker:", initialTicker); // Log initial ticker to verify
+    console.log("Initial ticker:", initialTicker); 
     
-    updateStockPlot(initialTicker, data[initialTicker]); // Call updateStockPlot with initial data
-    
-    // Function to update the stock plot based on selected ticker
+    updateStockPlot(initialTicker, data[initialTicker]); 
+
     function updateStockPlot(ticker, predictionData) {
-        console.log("Updating plot for:", ticker); // Log to check which ticker is being updated
+        console.log("Updating plot for:", ticker); 
         
         var layout = {
             title: "Stock Prediction for " + ticker,
@@ -55,7 +54,6 @@ d3.json("../Output/predictions.json").then(function(data) {
 
         var plotData = [trace1, trace2, trace3];
 
-        // Ensure Plotly is properly initialized
         Plotly.newPlot('stockPlot', plotData, layout).then(gd => {
             console.log("Plot updated successfully for:", ticker);
         }).catch(error => {
@@ -63,23 +61,23 @@ d3.json("../Output/predictions.json").then(function(data) {
         });
     }
 
-    // Define the optionChanged function
+    // Define the optionChanged 
 function optionChanged(selectedTicker) {
-    // Log the selected ticker to verify
+    
     console.log("Selected ticker:", selectedTicker);
 
-    // Call the updateStockPlot function with the selected ticker
+    
     updateStockPlot(selectedTicker);
 }
 
-    // Function to handle dropdown menu change
+    // Function to handle dropdown 
     dropdown.on("change", function() {
         var selectedTicker = this.value;
-        console.log("Selected ticker:", selectedTicker); // Log selected ticker
+        console.log("Selected ticker:", selectedTicker); 
         
-        updateStockPlot(selectedTicker, data[selectedTicker]); // Update plot based on selected ticker
+        updateStockPlot(selectedTicker, data[selectedTicker]); 
     });
     
 }).catch(function(error) {
-    console.error("Error loading data:", error); // Log any errors during data loading
+    console.error("Error loading data:", error); 
 });
