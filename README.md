@@ -28,6 +28,7 @@ The project utilized various Python libraries, including:
 ## Model Conditions and Use Cases:
 
 ### **Base Model - Addictive Regression Model (Without Technical Indicators):**
+The base model code can be accessed [here](https://github.com/Emadkamali/Stock-Analysis/blob/fc08f3e73789179b1ba90438b315afbba84b170b/base_model_MDLZ.ipynb)
 
 -   **Strengths:**
     -   Simpler and faster implementation,  focusing solely on historical price data
@@ -44,6 +45,7 @@ The project utilized various Python libraries, including:
     -   Suitable for quick trend analysis without the complexity of technical indicators
 
 ### Sentiment Analysis with Addictive Regression Model  (With Technical Indicators):
+The refined model code can be accessed here
 
 -   **Strengths:**
     -   Incorporates multiple technical indicators (SMA, EMA, RSI, MACD) for comprehensive market analysis
@@ -61,6 +63,7 @@ The project utilized various Python libraries, including:
 	- Ideal for long-term investors focusing on market trends and patterns
 
 ### Gradient Boosting Regression Model:
+The optimized model code can be accessed [here](https://github.com/Emadkamali/Stock-Analysis/blob/fc08f3e73789179b1ba90438b315afbba84b170b/Stock_Analysis_GradientBoostingRegressor_Model.ipynb)
 
 -   **Strengths:**
     -   Predicts next day's closing price using current day's closing price, providing a straightforward approach
