@@ -25,6 +25,9 @@ The project utilized various Python libraries, including:
     - vaderSentiment==3.3.2
     - sklearn == 1.2.2
 
+## Data Pipeline:
+![Data Pipeline](https://github.com/Emadkamali/Stock-Analysis/blob/fb5c6e76074fcb694e5889548d0ee74fbb3b05d7/Images/data_pipeline.jpg)
+
 ## Model Conditions and Use Cases:
 
 ### **Base Model - Addictive Regression Model (Without Technical Indicators):**
