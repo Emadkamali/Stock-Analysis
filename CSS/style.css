@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    color:#f4f4f4;
+    margin:auto
+}
+
+/* header */
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('../Images/picture.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* nav styles */
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 120px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul {
+    list-style: none;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 200;
+}
+/* adding hover effect for Home, About us, predictions and Stock Analysis */
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #eae1e0;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+   width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color:#fff;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.button-repo{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 2% 2%;
+    font-size: 35 px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.button-repo:hover{
+    border: 1px solid #50aad7;
+    background: #50aad7;
+    transform: 1s;
+}
+
+.text-about{
+    color:#fff;
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 50px ;
+}
+
+.h2{
+    font-size: 36px;
+    font-weight: 500;
+}
+
+/*  Our team */
+.team{
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 100px ;
+    color: black;
+}
+
+.team-names {
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.team-member {
+    flex: 0 0 45%; 
+    margin-bottom: 5%;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.team-member h3 {
+    margin: 10px 0 5px;
+}
+
+.team-member p {
+    margin: 0;
+    font-weight: 200;
+}
+
+.stocks{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+.analysis img {
+    width: 90%; 
+    display: block; 
+    margin: 0 auto; 
+    margin-bottom: 30px;
+    border: 5px solid rgb(33, 32, 32); 
+}
+
+.prediction{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+#stockPlot{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    margin: auto; 
+    height: 10%; 
+    border: 5px solid rgb(33, 32, 32); 
+    box-sizing: auto;
+}
+
+#stockPlots{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: auto; 
+    height: 10%; 
+    border: 5px solid rgb(33, 32, 32); 
+    box-sizing: auto;
+}
+
+
+

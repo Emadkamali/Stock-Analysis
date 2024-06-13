@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- making website responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stock Analysis Website</title>
+        <!-- linking CSS sheet -->
+        <link rel="stylesheet" href="../CSS/style.css">
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="../Images/logo.jpg" alt="Logo"></a>
+                <div class="nav-links">
+                    <ul id="list">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="stocks.html">STOCKS</a></li>
+                        <li><a href="analysis.html">STOCK ANALYSIS</a></li>
+                        <li><a href="prediction.html">PREDICTIONS</a></li>
+                        <li><a href="about.html">ABOUT US</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+            <div class="stocks">
+                <div>
+                    <label for="selTicker">Select stock that you would like to view :</label>
+                    <select id="selTicker" onchange="optionChanged(this.value)">
+                    </select>
+                    <br><br>
+                </div>
+                <div id="stockPlot"></div>
+                <script src="../JavaScript/app.js"></script>
+            </div>
+            </section>
+    </body>
+    <footer class="copyright">
+        <p>&copy; 2024 Jasleen Shergill. All rights reserved.</p>
+    </footer>
+</html>
