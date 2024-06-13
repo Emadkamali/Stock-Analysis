@@ -45,7 +45,7 @@ The base model code can be accessed [here](https://github.com/Emadkamali/Stock-A
     -   Suitable for quick trend analysis without the complexity of technical indicators
 
 ### Sentiment Analysis with Addictive Regression Model  (With Technical Indicators):
-The refined model code can be accessed here
+The refined model code can be accessed [here](https://github.com/Emadkamali/Stock-Analysis/blob/69ec6ae2792c9a980dd20be642ed75b61c3f68e5/Stock+senti.ipynb)
 
 -   **Strengths:**
     -   Incorporates multiple technical indicators (SMA, EMA, RSI, MACD) for comprehensive market analysis
