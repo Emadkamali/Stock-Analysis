@@ -16,6 +16,14 @@ The project utilized various Python libraries, including:
     -   HTML, CSS (for web interface creation)
     -   Tableau (for storyboarding)
 
+## Versions used:
+python==3.11.5
+yfinance=0.2.40
+pandas==2.0.3
+prophet==1.1.5
+vaderSentiment==3.3.2
+sklearn == 1.2.2
+
 ## Model Conditions and Use Cases:
 
 ### **Base Model - Addictive Regression Model (Without Technical Indicators):**
